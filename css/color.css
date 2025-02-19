@@ -1,0 +1,30 @@
+:root {
+    --color-green-lv3: rgb(0,139,75);
+
+    --color-green-icon: rgb(103,146,16);
+    --color-white-icon: white;
+    --color-yellow-icon: rgb(253,201,125);
+
+    --color-green-text-lv2: rgb(104,147,17);
+    --color-green-text-lv1: rgb(151,185,85);
+    
+    --color-white-text: white;
+    --color-black-text: black;
+
+    --color-background-lv1: rgb(239,255,207);
+    --color-background-lv3: rgb(103,146,16);
+    --color-background-white: white;
+
+    --color-btn-lv3: rgb(0,78,62);
+    --color-btn-lv2: rgb(118,167,19);
+
+    --color-border-lv3:  rgb(0,78,62);
+
+
+    --color-1: #7cc652;
+    --color-2: #00845c;
+    --green: #28a745;
+    --textColor: #333333;
+    --white: #fff;
+    --gray: #6c757d;
+}

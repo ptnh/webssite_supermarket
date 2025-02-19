@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermarket</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+
+    <script src="js/dungchung.js"></script>
+    <script src="data/product.js"></script>
+    <script src="js/classes.js"></script>
+    <script src = "js/giohang.js"></script>
+    
+    <link rel="stylesheet" href="css/_header.css">
+    <link rel="stylesheet" href="css/giohang.css">
+    <link rel="stylesheet" href="css/_footer.css">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/dungchung.css">
+</head>
+<style>
+    #notification {
+        padding: 10px;
+        border-radius: 5px;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+        opacity: 1;
+        transition: opacity 1s ease-out; /* Thay đổi thời gian hiệu ứng mờ dần */
+        z-index: 1000; /* Đảm bảo thông báo luôn ở trên cùng */
+        /* background-color: #fff; Đặt màu nền cho thông báo */
+    }
+    .icon-text {
+        display: flex;
+        align-items: center;
+        flex: 1;
+    }
+    .icon-text i {
+        font-size: 24px;
+        margin-right: 10px;
+    }
+    .icon-text span {
+        font-size: 16px;
+    }
+    .close-btn {
+        font-size: 20px;
+        color: #333;
+        cursor: pointer;
+        margin-left: 15px;
+        background: none;
+        border: none;
+        outline: none;
+        transition: color 0.3s;
+    }
+    .close-btn:hover {
+        color: #f00;
+    }
+</style>
+<body>
+    <script>addHeader();</script>
+
+    <div class="cart">
+       
+        <div class="infoCart">
+            <div class="infoCart_infoProduct">
+                <p class="infoCart_infoProduct--title">Giỏ hàng của bạn</p>
+                <table class="tableProduct">
+                    <thead class="tableProduct_thead">
+                        <tr class="tableProduct_thead--tr">
+                            <th class="tableProduct_thead--tr--th">Thông tin sản phẩm</th>
+                            <th class="tableProduct_thead--tr--th">Đơn giá</th>
+                            <th class="tableProduct_thead--tr--th">Số lượng</th>
+                            <th class="tableProduct_thead--tr--th">Thành tiền</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tableProduct_tbody">
+                       
+                    </tbody>
+                </table>
+            </div>
+            <div class="infoCart_infoBill">
+                <div class="infoCart_infoBill--title">Thông tin đơn hàng</div>
+                <div class="infoCart_infoBill--totalMoney">
+                    <div class="infoCart_infoBill--totalMoney--text">Tổng tiền</div>
+                    <div id="total_money--product" class="infoCart_infoBill--totalMoney--money"></div>
+                </div>
+                <div class="infoCart_infoBill--policyDriver">
+                    <div class="infoCart_infoBill--policyDriver--text">Phí vận chuyển sẽ được tính ở trang thanh toán.</div>
+                    <div class="infoCart_infoBill--policyDriver--text">Bạn cũng có thể nhập mã giảm giá ở trang thanh toán.</div>
+                </div>
+                <div class="infoCart_infoBill--timeDriver">
+                    <div class="infoCart_infoBill--timeDriver--title">Thời gian giao hàng</div>
+                    <div class="infoCart_infoBill--timeDriver--selectTime">
+                        <input class="timeDriver_selectTime--day" type="date" name="datepicker" id="datepicker">
+                        <select class="timeDriver_selectTime--hour" id="time-select">
+                            <option value="8">8:00</option>
+                            <option value="16">16:00</option>
+                            <option value="20">20:00</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="infoCart_infoBill--btn">
+                    <button class="infoCart_infoBill--btnPay" onclick="thanhtoanngay()">Thanh toán ngay</button>
+                    <a href="/website-business/trangchu.html" class="infoCart_infoBill--btnContinuteBuy">Tiếp tục mua hàng</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="ticketDiscount">
+        <p class="ticketDiscount_title">Mã giảm giá</p>
+        <div class="list_tickets">
+            <div class="ticketDiscount_discount">
+                <div class="ticketDiscount_discount--product">
+                    <p class="ticketDiscount_name">50K</p>
+                    <p class="ticketDiscount_policy">Nhập mã BEA50 giảm 50k cho đơn từ 750k</p>
+                </div>
+                <div class="ticketDiscount_discount--use">
+                    <p class="ticketDiscount_discount--use--code">BEA50</p>
+                    <button class="ticketDiscount_discount--use--btnCopy">Lưu mã</button>
+                </div>
+            </div>
+            <div class="ticketDiscount_discount">
+                <div class="ticketDiscount_discount--product">
+                    <p class="ticketDiscount_name">50K</p>
+                    <p class="ticketDiscount_policy">Nhập mã BEA50 giảm 50k cho đơn từ 750k</p>
+                </div>
+                <div class="ticketDiscount_discount--use">
+                    <p class="ticketDiscount_discount--use--code">BEA50</p>
+                    <button class="ticketDiscount_discount--use--btnCopy">Lưu mã</button>
+                </div>
+            </div>
+            <div class="ticketDiscount_discount">
+                <div class="ticketDiscount_discount--product">
+                    <p class="ticketDiscount_name">50K</p>
+                    <p class="ticketDiscount_policy">Nhập mã BEA50 giảm 50k cho đơn từ 750k</p>
+                </div>
+                <div class="ticketDiscount_discount--use">
+                    <p class="ticketDiscount_discount--use--code">BEA50</p>
+                    <button class="ticketDiscount_discount--use--btnCopy">Lưu mã</button>
+                </div>
+            </div>
+            <div class="ticketDiscount_discount">
+                <div class="ticketDiscount_discount--product">
+                    <p class="ticketDiscount_name">50K</p>
+                    <p class="ticketDiscount_policy">Nhập mã BEA50 giảm 50k cho đơn từ 750k</p>
+                </div>
+                <div class="ticketDiscount_discount--use">
+                    <p class="ticketDiscount_discount--use--code">BEA50</p>
+                    <button class="ticketDiscount_discount--use--btnCopy">Lưu mã</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    
+    <script>addFooter();</script>
+     <!-- link liên lạc -->
+     <div id="linkContactZalo">
+
+    </div>
+    <div id="notification">
+            
+    </div>
+    <!-- link liên lạc -->
+</body>
+</html>

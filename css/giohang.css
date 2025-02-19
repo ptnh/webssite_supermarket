@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.cart{
+    width: 1290px;
+    margin: 10px auto 20px;
+    background-color: rgb(167,217,87);
+    box-shadow: 10px 20px 10px rgb(145, 245, 141);
+}
+/* thiếu link 2 màu đỏ */
+.infoCart{
+    width: 1290px;
+    display: flex;
+    background-color: rgb(167,217,87);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.infoCart_infoProduct{
+    width: 800px;
+    background-color: white;
+    margin-left: 15px;
+}
+.infoCart_infoProduct--title{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+/* css bảng */
+.tableProduct {
+    width: 100%;
+    border-collapse: collapse; /* Để loại bỏ khoảng cách giữa các ô */
+}
+.img_product--table{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+.tableProduct_thead--tr--th:first-child,
+.tableProduct_tbody--tr--td:first-child {
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+.tableProduct_thead--tr--th,
+.tableProduct_tbody--tr--td {
+  
+    padding: 8px; /* Khoảng cách giữa nội dung và đường viền */
+    text-align: center;
+    
+}
+
+.tableProduct_thead--tr--th {
+    background-color: #f2f2f2; /* Màu nền cho tiêu đề */
+    font-weight: bold; /* Đậm chữ cho tiêu đề */
+}
+
+.btn_table--cart {
+    background-color: rgb(248,248,248);
+    border: 1px solid rgb(229,229,229); /* Loại bỏ viền nút */
+    width: 30px;
+    height: 30px;
+}
+
+.quantity_product {
+    display: inline-block; /* Hiển thị là khối inline */
+    margin: 0 10px; /* Khoảng cách giữa nút điều chỉnh */
+}
+.tableProduct_tbody--tr{
+    border-bottom: 1px solid rgb(229,229,229);
+}
+/* css bill */
+.infoCart_infoBill{
+    width: 400px;
+    margin-left: 20px;
+    background-color: white;
+}
+.infoCart_infoBill--title{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    margin: 10px 20px;
+    padding-bottom: 10px;
+    border-bottom:1px solid rgb(221,221,221);
+}
+.infoCart_infoBill--totalMoney{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(221,221,221);
+}
+.infoCart_infoBill--totalMoney--text{
+    color: black;
+    font-weight: 20px;
+    font-weight: bold;
+}
+.infoCart_infoBill--totalMoney--money{
+    font-weight: bold;
+    color: red;
+    font-size: 20px;
+}
+.infoCart_infoBill--policyDriver{
+    margin: 10px 20px;
+    border-bottom: 1px solid rgb(221,221,221);
+}
+.infoCart_infoBill--policyDriver--text{
+    font-size: 20px;
+    margin: 5px 0px;
+}
+.infoCart_infoBill--timeDriver{
+    margin: 10px 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(221,221,221);
+}
+.infoCart_infoBill--timeDriver--title{
+    font-weight: bold;
+    font-size: 20px;
+    margin: 5px 0px;
+}
+.infoCart_infoBill--timeDriver--selectTime{
+
+}
+.timeDriver_selectTime--day{
+    padding: 4px 8px;
+    font-size: 15px;
+    margin-right: 20px;
+}
+.timeDriver_selectTime--hour{
+    padding: 4px 8px;
+    font-size: 15px;
+    margin-left: 20px;
+}
+.infoCart_infoBill--btn{
+    margin: 10px 20px;
+}
+.infoCart_infoBill--btnPay{
+    width: 360px;
+    padding: 5px 0px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    background-color: rgb(167,217,87);
+    color: white;
+    border: none;
+}
+.infoCart_infoBill--btnContinuteBuy{
+    /* width: 360px; */
+    padding: 5px 104px;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: rgb(221,221,221);
+    color: black;
+    border: 1px solid rgb(167,217,87);
+}
+/* ------------------------------- Css cho copy phiếu giảm giá ---------------------------------------- */
+
+/* sss */
+.ticketDiscount{
+    width: 1290px;
+    background-color: rgb(235,248,242);
+}
+.ticketDiscount_title{
+    font-size: 20px;
+    padding-top: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(167,217,87);
+   
+}
+.list_tickets{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ticketDiscount_discount{
+    width: 300px;
+    max-height: 100px;
+    background-color: white;
+    box-shadow: 1px 1px 1px rgb(167,217,87);
+}
+.ticketDiscount_discount--product{
+}
+.ticketDiscount_policy{
+    padding: 0px 10px;
+    font-size: 14px;
+}
+.ticketDiscount_name{
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(249,199,86);
+    padding: 5px 10px;
+}
+.ticketDiscount_discount--use{
+    display: flex;
+    margin-top: 5px;
+    padding: 5px 10px;
+    align-items: center;
+    background-color: rgb(245,245,245);
+    justify-content: space-between;
+
+}
+.ticketDiscount_discount--use--btnCopy{
+    border: none;
+    background-color: rgb(145, 245, 141);
+    padding: 4px 4px;
+    border-radius: 8px;
+}
+/* ------------------------------- Css cho copy phiếu giảm giá ---------------------------------------- */
+
+/* .btn-x-delete{
+    font-size: 20px;
+}
+.btn-x-delete:hover{
+    color: red;
+    cursor: pointer;
+} */

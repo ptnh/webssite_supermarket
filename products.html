@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermarket</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+   
+    <script src="data/product.js"></script>
+    <script src="js/dungchung.js"></script>
+    <script src="js/classes.js"></script>
+    <script src="js/products.js"></script>
+    
+    <link rel="stylesheet" href="css/_header.css">
+    <link rel="stylesheet" href="css/_footer.css">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/dungchung.css">
+    <link rel="stylesheet" href="css/products.css">
+</head>
+<body>
+    <script>addHeader();</script>
+    <div class="container_listproduct">
+        <div class="leftOption">
+            <div class="leftOption_danhmuc">
+                <div class="leftoption_danhmuc--title">
+                    <h3 class="cata--title--text">Danh mục sản phẩm</h3>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div class="optionChild">Rau củ quả</div>
+                <div class="optionChild">Thịt và cá</div>
+                <div class="optionChild">Đồ khô</div>
+                <div class="optionChild">Trái cây</div>
+                <div class="optionChild">Tất cả</div>
+            </div>
+            <div class="price-filter">
+                <div class="price-filter__header">
+                    <h3 class="price-filter__title">Chọn mức giá</h3>
+                    <i class="price-filter__icon fa-solid fa-caret-down"></i>
+                </div>
+                <form class="price-filter__form">
+                    <label class="price-filter__checkbox">
+                        <input type="checkbox" class="price-filter__input" onclick="orderByProducts('price20000', this)">
+                        Dưới 20.000đ
+                    </label>
+                    <label class="price-filter__checkbox">
+                        <input type="checkbox" class="price-filter__input" onclick="orderByProducts('price50000', this)">
+                        Dưới 50.000đ
+                    </label>
+                    <label class="price-filter__checkbox">
+                        <input type="checkbox" class="price-filter__input" onclick="orderByProducts('price100000', this)">
+                        Dưới 100.000đ
+                    </label>
+                    <label class="price-filter__checkbox">
+                        <input type="checkbox" class="price-filter__input" onclick="orderByProducts('price200000', this)">
+                        Dưới 200.000đ
+                    </label>
+                    <label class="price-filter__checkbox">
+                        <input type="checkbox" class="price-filter__input" onclick="orderByProducts('price400000', this)">
+                        Dưới 400.000đ
+                    </label>
+                </form>
+            </div>
+            
+        </div>
+        <div class="rightOption">
+            <div class="filter">
+                <p class="filter__label">Xếp theo:</p>
+                <div class="filter__button filter__button--active" onclick="orderByProducts('a', this)">Tên A-Z</div>
+                <div class="filter__button" onclick="orderByProducts('z', this)">Tên Z-A</div>
+                <div class="filter__button" onclick="orderByProducts('new', this)">Hàng mới</div>
+                <div class="filter__button" onclick="orderByProducts('cao', this)">Giá thấp đến cao</div>
+                <div class="filter__button" onclick="orderByProducts('thap', this)">Giá cao đến thấp</div>
+                <div class="filter__button" onclick="orderByProducts('chay', this)">Bán chạy</div>
+            </div>
+            <div class="listProductFilter" id="listProductFilter">
+                    
+            </div>
+            <div id="pagination">
+                <button onclick="changePage(1)">Trang 1</button>
+                <button onclick="changePage(2)">Trang 2</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

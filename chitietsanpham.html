@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermarket</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+   
+    <script src="js/chitietsanpham.js"></script>
+    <script src="js/dungchung.js"></script>
+    <script src="data/product.js"></script>
+    <script src="js/classes.js"></script>
+
+    <link rel="stylesheet" href="css/_header.css">
+    <link rel="stylesheet" href="css/_footer.css">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/dungchung.css">
+    <link rel="stylesheet" href="css/chitietsanpham.css">
+    
+</head>
+<body>
+    <script>addHeader();</script>
+    
+    <!-- thông tin chi tiết sản phẩm -->
+    <div class="info_detail_product">
+        <!-- xem sản phẩm chi tiết -->
+        <div class="view__detail__product">
+            <div id="showDetailProduct1" class="detail_product-left">
+                <!--ảnh sản phẩm  -->
+               
+            </div>
+            <!-- mô tả sản phẩm cách dùng ... -->
+            <div class="productDescription">
+                <div class="productDescription_list"> 
+                    <p id="btnDescriptionProduct" class="productDescription_list-btn">Mô tả sản phẩm</p>
+                    <p id="btnShoppingGuide" class="productDescription_list-btn">Hướng dẫn mua hàng</p>
+                </div>
+                <div class="productDescription_detail">
+                    <p class="productDescription_detail-text">
+                        
+                    </p>
+                </div>
+            </div>      
+        </div>
+        <div class="program_store">
+            <div class="tam-2">
+                <!-- chính sách -->
+                <div class="policy">
+                    <div class="policy-title">
+                        <p class="policy_title--text">Chính sách cửa hàng</p>
+                        <!-- <img class="policy_title--icon icon-title" src="public/icon/la.png" alt=""> -->
+                    </div>
+                    <div class="policy_content">
+                        <img class="policy_content--img  image-minh-hoa" src="public/icon/chinhsach_1.webp">
+                        <div class="policy_content--detail detail-content">
+                            <p class="policy_content--detail--title">Miễn phí vận chuyển</p>
+                            <p class="policy_content--detail--content">Cho tất cả đơn hàng trong nội thành HCM</p>
+                        </div>
+                    </div>
+                    <div class="policy_content">
+                        <img class="policy_content--img" src="public/icon/chinhsach_2.webp">
+                        <div class="policy_content--detail">
+                            <p class="policy_content--detail--title">Miễn phí đổi trả</p>
+                            <p class="policy_content--detail--content">Đối với sản phẩm lỗi sản xuất hoặc vận chuyển</p>
+                        </div>
+                    </div>
+                    <div class="policy_content">
+                        <img class="policy_content--img" src="public/icon/chinhsach_3.webp">
+                        <div class="policy_content--detail">
+                            <p class="policy_content--detail--title">Hỗ trợ nhanh chóng</p>
+                            <p class="policy_content--detail--content">Gọi Hotline: 19006750 để được hỗ trợ ngay</p>
+                        </div>
+                    </div>
+                    <div class="policy_content">
+                        <img class="policy_content--img" src="public/icon/chinhsach_4.webp">
+                        <div class="policy_content--detail">
+                            <p class="policy_content--detail--title">Ưu đãi combo</p>
+                            <p class="policy_content--detail--content">Mua theo combo,mùa càng mua nhiều giá càng rẻ</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- vé giảm giá -->
+                <div class="discountTickets" id="showListGiamGia">
+                    <div class="discountTickets_title">
+                        <p class="discountTickets_title-text">Mã khuyến mãi</p>
+                        <img class="discountTickets_title-img" src="public/icon/leaf.webp" alt="">
+                    </div>
+                    <div class="discountTicket">
+                        <div class="discountTicket_info">
+                            <div class="discountTicket_info--basic">
+                                <p class="discountTicket_info--basic--name">DOLA30</p>
+                                <p class="discountTicket_info--basic--value">Giảm 30.000đ giá trị đơn hàng</p>
+                            </div>
+                            <div class="discountTicket_info--icon">
+                                <p class="discountTicket_info--icon--p">i</p>
+                            </div>
+                        </div>
+                        <div class="discountTicket_expiry">
+                            <p class="discountTicket_expiry--time">HSD: 1/10/2023</p>
+                            <p class="discountTicket_expiry--copy" data-code="DOLA30" onclick="copyToClipboard(this)">Sao chép</p>
+                        </div>
+                    </div>
+                    <div class="discountTicket">
+                        <div class="discountTicket_info">
+                            <div class="discountTicket_info--basic">
+                                <p class="discountTicket_info--basic--name">DOLA20</p>
+                                <p class="discountTicket_info--basic--value">Giảm 20.000đ giá trị đơn hàng</p>
+                            </div>
+                            <div class="discountTicket_info--icon">
+                                <p class="discountTicket_info--icon--p">i</p>
+                            </div>
+                        </div>
+                        <div class="discountTicket_expiry">
+                            <p class="discountTicket_expiry--time">HSD: 1/10/2023</p>
+                            <p class="discountTicket_expiry--copy" data-code="DOLA20" onclick="copyToClipboard(this)">Sao chép</p>
+                        </div>
+                    </div>
+                    <div class="discountTicket">
+                        <div class="discountTicket_info">
+                            <div class="discountTicket_info--basic">
+                                <p class="discountTicket_info--basic--name">DOLA10</p>
+                                <p class="discountTicket_info--basic--value">Giảm 10.000đ giá trị đơn hàng</p>
+                            </div>
+                            <div class="discountTicket_info--icon">
+                                <p class="discountTicket_info--icon--p">i</p>
+                                <p class="discountTicket_info--icon--detail">Khi mua hàng trên 200k được giảm 10k</p>
+                            </div>
+                        </div>
+                        <div class="discountTicket_expiry">
+                            <p class="discountTicket_expiry--time">HSD: 1/10/2023</p>
+                            <p class="discountTicket_expiry--copy" data-code="Discount1" onclick="copyToClipboard(this)">Sao chép</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- link liên lạc -->
+    <div id="linkContactZalo">
+
+    </div>
+    <!-- link liên lạc -->
+    <div id="notification">
+            
+    </div>
+    <script>addFooter();</script>
+
+    <script src="js/chitietsanphamcuoi.js"></script>
+    <!-- <script src="index.js"></script> -->
+</body>
+</html>

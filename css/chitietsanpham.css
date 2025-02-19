@@ -1,0 +1,468 @@
+/* css chung */
+.regular-text{
+    color: black;
+    font-size: 18px;
+}
+
+/*------------------  slider advertisement -------------------- */
+.slider_advertisement{
+    /* width: 100%; */
+    margin-bottom: 20px;
+}
+.slider_advertisement--image{
+    width: 100%;
+    background-size: cover; /* Hiển thị ảnh mà không bị méo */
+    background-repeat: no-repeat; /* Ngăn ảnh lặp lại */
+}
+/* /////////////////////// slider advertisement /////////////////////// */
+
+
+
+
+/* --------------------- body -------------------- */
+.view__detail__product{
+    width: 1200px;
+    /* margin-right: 30px; */
+   
+}
+/* --------------- image present -*15 */
+
+.product{
+    width: 400px;
+}
+.product_image{
+    width: 400px;
+    height: 400px;
+    background-size: cover; /* Hiển thị ảnh mà không bị méo */
+    background-repeat: no-repeat;
+}
+/* css chương trình quảng cáo con */
+.product_advertisement{
+    width: 100%;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: rgb(244,255,221);
+}
+.product_advertisement--svg{
+    color: yellow;
+    font-size: 18px;
+    margin: 5px 5px;
+}
+.product_advertisement--text{
+    font-size: 18px;
+    color: green;
+}
+/* ----- */
+/* css phần ảnh thay thês */
+.product_img{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.product_img--chlid{
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+    border-radius: 4px;
+    border: 2px solid rgb(235,235,235);
+}
+.product_img--chlid-focus{
+    border: 2px solid rgb(103,146,16);
+}
+.image-child-focus:hover{
+    border: 2px solid rgb(103,146,16) !important; 
+}
+.product_img--chlid:hover {
+    border: 2px solid rgb(103,146,16);
+}
+/* hết css ảnh đại dhieenj sap */
+/* ////////////////////////////////////////////////// */
+/* ---------------------- chính sách */
+
+/* css cho chính sách ---------------------*/
+.policy{
+    width: 320px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(239,255,207);
+}
+.policy-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.policy_title--text{
+    font-size: 28px;
+    color: rgb(103,146,16);
+}
+.policy_content{
+    display: flex;
+    align-items: center;
+    margin: 5px 0px;
+}
+.policy_content--img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.policy_content--detail--title{
+    font-size: 22px;
+    color: rgb(103,146,16);
+}
+.policy_content--detail--content{
+    font-size: 18px;
+    color: black;
+}
+/* ////////////////////////////////// */
+/* ----------------------- chương trình đặc biệt ----------------- */
+
+/* thông báo khuyến mãi */
+.special__program{
+    width: 580px;
+    margin: 10px 20px;
+
+}
+.special__program_slogan{
+    width: 250px;
+    background-color: rgb(103,146,16);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    /* padding: 5px 0px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.special__program_slogan-icon, .special__program_content-detail-icon{
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+}
+.special__program_slogan-text{
+    color: white;
+    font-weight: bold;
+}
+.special__program_content{
+    width: 580px;
+    border: 1px solid rgb(103,146,16);
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.special__program_content-detail{
+    display: flex;
+    align-items: center;
+}
+/* //////////////////////////////////// */
+/* ----------------- center info detail product price, name --------------------*/
+.info__product{
+    width: 580px;
+}
+.info__product_name{
+    color: rgb(103,146,16);
+    font-size: 24px;
+    font-weight: bold;
+    margin: 5px 20px;
+}
+.info__product_status{
+    color: black;
+    font-size: 18px;
+    margin: 5px 20px;
+}
+.info__product_status--span{
+    color:rgb(117,156,38);
+}
+.info__product_price{
+    padding: 8px 10px;
+    margin-left: 20px;
+    background-color: rgb(239,255,207);
+    border-radius: 5px;
+}
+.info__product_price--sell{
+    margin: 5px 10px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.info__product_price--sell--old{
+    text-decoration: line-through;
+}
+.info__product_price--sell--promotion--span{
+    color: rgb(117,156,38);
+    font-weight: bold;
+    font-size: 32px;
+}
+.info__product_price--economical{
+    margin: 5px 10px;
+}
+.info__product_price--economical--text{
+    
+}
+.info__product_price--economical--text--span{
+    color: red;
+}
+/* bộ đếm số lượng, trọng lượng */
+.info__product_value{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 20px;
+}
+.info__product_value--quantity{
+    margin-right: 40px;
+}
+.info__product_value--quantity--text{
+    margin: 5px 0px;
+}
+.info__product_value--quantity--select{
+    border: 1px solid rgb(103,146,16);
+    border-radius: 4px;
+    padding: 3px;
+    margin: 5px 0px;
+}
+.info__product_value--quantity--select--btn{
+    background-color: rgb(103,146,16);
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#quantity__product_select{
+    margin: 0px 10px;
+}
+/* input trọng lượng */
+.info__product_value--weight{
+
+}
+#value--weight{
+    width: 50px;
+    align-items: center;
+    padding: 10px;
+    margin: 2px 5px 2px 0px;
+    border: 1px solid rgb(103,146,16);
+}
+/* css tổng tiền */
+.info__product_totalprice{
+    width: 60%;
+    margin: 10px 20px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.info__product_totalprice--text{
+    font-size: 28px;
+    color: black;
+}
+.info__product_totalprice--money{
+    font-size: 28px;
+    color: rgb(103,146,16);
+    margin-left: 20px;
+    font-weight: bold;
+}
+/* btn add cart */
+.info__product_addcart{
+    width: 70%;
+    background-color: rgb(103,146,16);
+    color: white;
+    font-size: 24px;
+    padding: 7px 20px;
+    margin: 5px 20px;
+    border: none;
+    border-radius: 5px;
+}
+.info__product_addcart:hover{
+    background-color: rgb(118,167,19);
+}
+/* ------------------- vé khuyến mãi --------------- */
+
+/* --------------------------------- */
+/* css mã khuyến mãi */
+.discountTickets{
+    width: 320px;
+    background-color: rgb(239,255,207);
+    border-radius: 5px;
+    padding: 1px;
+    margin-top: 10px;
+}
+.discountTickets_title{
+    display: flex;
+    align-items: center;
+    margin: 5px 10px;
+}
+.discountTickets_title-text{
+    color: rgb(118,167,19);
+    font-size: 28px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.discountTickets_title-img{
+    width: 25px;
+    height: 25px;
+}
+.discountTicket{
+    border: 2px solid rgb(103,146,16);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 3px;
+}
+.discountTicket_info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+.discountTicket_info--basic--value{
+    margin: 6px 0px;
+}
+.discountTicket_info--icon{
+    width: 25px;
+    height: 25px;
+    border: 1px solid rgb(118,167,19);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px; /* Căn giữa theo chiều dọc */
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+}
+.discountTicket_info--icon--p{
+    color: rgb(118,167,19);
+}
+.discountTicket_info--icon--detail{
+    width: 200px;
+    height: auto;
+    padding: 10px; /* Thêm padding nếu cần để tạo khoảng cách giữa văn bản và biên của khung */
+    background-color: antiquewhite;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    /* transform: translate(50%, -50%); Điều chỉnh vị trí khung cho chính xác */
+    display: none;
+    text-align: left;
+}
+.discountTicket_info--icon--p:hover+.discountTicket_info--icon--detail{
+    display: block;
+}
+.discountTicket_expiry{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(118,167,19);
+}
+.discountTicket_expiry--copy{
+    background-color: rgb(118,167,19);
+    color: white;
+    border-radius: 4px;
+    padding: 6px 8px;
+}
+/* CSS TỔNG */
+.info_detail_product{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+.program_store{
+    width: 380px;
+}
+.detail_product-left{
+    width: 1000px;
+    display: flex;
+}
+
+/*------------------------------- css mô tả sp và hướng dẫn mua hàng */
+.productDescription{
+    width: 600px;
+   
+}
+.productDescription_list{
+    display: flex;
+    margin: 10px 0px;
+}
+.productDescription_list-btn{
+    background-color: white;
+    color: rgb(103,146,16);
+    font-weight: bold;
+    font-size: 20px;
+    border: 1px solid rgb(103,146,16);
+    border-radius: 3px;
+    margin: 5px;
+    padding: 5px 10px;
+}
+.productDescription_list-btn-active{
+    background-color: rgb(103,146,16);
+    color: white;
+}
+.productDescription_list-btn:hover{
+    background-color: rgb(103,146,16);
+    color: white;
+}
+.productDescription_detail{
+    max-width: 600px;
+    margin-left: 5px;
+    border-radius: 5px;
+    padding: 5px 5px 15px 5px;
+    border: 1px solid green;
+}
+/* ////////////////////////////////////////////////////////// */
+.footer{
+    width: 100%;
+    padding: 20px 0px;
+    margin-top: 20px;
+    background-color: rgb(239,255,207);
+    display: flex;
+    /* align-items: center/; */
+    justify-content: space-around;
+}
+.footer_left{
+    width: 25%;
+}
+.footer_left--img{
+    width: 100%;
+    height: auto;
+}
+.footer_left--content{
+    width: 100%;
+    font-size: 12px;
+    color: black;
+}
+.footer_left--text{
+    color: #679210;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.footer_left--pay{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer_left--pay--link{
+    width: 20%;
+
+}
+.footer_rightCenter--text, .footer_leftCenter--text{
+    color: rgb(118,167,19);
+    font-weight: bold;
+    font-size: 20px;
+}
+/* css footer left center */
+.footer_leftCenter{
+    width: 25%;
+}
+
+.footer_leftCenter--polic--link, .footer_rightCenter--polic--link{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+/* css footer right center */
+.footer_rightCenter{
+    width: 25%;
+}

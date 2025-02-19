@@ -1,0 +1,58 @@
+.introduce{
+    margin: 40px 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.introduce-left{
+    flex: 7;
+}
+.introduce-left--title{
+    font-weight: 500;
+    font-size: 24px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.introduce-left--text{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+/* css cho chính sách ---------------------*/
+.policy{
+    width: 320px;
+    max-height: 400px;
+    padding: 10px;
+    border-radius: 5px;
+    flex:3;
+    background-color: rgb(239,255,207);
+}
+.policy-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.policy_title--text{
+    font-size: 28px;
+    color: rgb(103,146,16);
+}
+.policy_content{
+    display: flex;
+    align-items: center;
+    margin: 5px 0px;
+}
+.policy_content--img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.policy_content--detail--title{
+    font-size: 22px;
+    color: rgb(103,146,16);
+}
+.policy_content--detail--content{
+    font-size: 18px;
+    color: black;
+}
+/* ////////////////////////////////// */

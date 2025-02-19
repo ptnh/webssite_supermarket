@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermarket</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/handleAccount.css">
+    
+    <script src="js/dungchung.js"></script>
+    <script src="js/classes.js"></script>
+
+</head>
+<body>
+    <div class="form-container">
+        <div class="col col-1">
+            <div class="image-layer">
+                <img src="public/icon/logo.png" class="form-image-main">
+                <!-- <img src="../outline.png" class="form-image dots">
+                <img src="../outline.png" class="form-image coin">
+                <img src="outline.png" class="form-image spring">
+                <img src="outline.png" class="form-image rocket">
+                <img src="outline.png" class="form-image cloud">
+                <img src="outline.png" class="form-image stars"> -->
+            </div>
+            <p class="featured-words">Thương hiệu uy tín mang lại niềm tin <span>cho bạn</span></p>
+        </div>
+        <div class="col col-2">
+            <div class="btn-box">
+                <button class="btn btn-1" id="login">Sign In</button>
+                <button class="btn btn-2" id="register">Sign Up</button>
+            </div>
+            <form onsubmit="return logIn(this);" class="login-form">
+                <div class="form-title">
+                    <span>Sign In</span>
+                </div>
+                <div class="form-inputs">
+                    <div class="input-box">
+                        <input name='username' type="text" placeholder="Username" class="input-field" required autocomplete="off" />
+                        <!-- <input type="text" class="input-field" placeholder="Username" required> -->
+                        <i class="bx bx-user icon"></i>
+                    </div>
+                    <div class="input-box">
+                        <input name='pass' type="password" class="input-field" placeholder="Password" required autocomplete="off" />
+                        <!-- <input type="password" class="input-field" placeholder="Password" required> -->
+                        <i class="bx bx-lock-alt icon"></i>
+                    </div>
+                    <div class="forgot-pass">
+                        <a href="#">Forgot Password</a>
+                    </div>
+                    <div class="input-box">
+                        <button type="submit" class="input-submit">
+                            <span>Sign In</span>
+                            <i class="bx bx-right-arrow-alt"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="social-login">
+                    <i class="bx bxl-google"></i>
+                    <i class="bx bxl-facebook"></i>
+                    <i class="bx bxl-twitter"></i>
+                    <i class="bx bxl-github"></i>
+                </div>
+            </form>
+            <!-- FORM REGISTER -->
+            <form onsubmit="return signUp(this);" class="register-form">
+                <div class="form-title">
+                    <span>Create Account</span>
+                </div>
+                <div class="form-inputs">
+                    <div class="input-box">
+                        <input name="ho" type="text" class="input-field" placeholder="Họ và tên:" required autocomplete="off" />
+                        <i class="bx bx-envelope icon"></i>
+                    </div>
+                    <div class="input-box">
+                        <input name="phone" type="number" class="input-field" placeholder="Số điện thoại:" required autocomplete="off" />
+                        <i class="bx bx-user icon"></i>
+                    </div>
+                    <!-- <div class="input-box">
+                        <input name="address" type="text"  class="input-field" placeholder="Địa chỉ:" required autocomplete="off" />
+                        <i class="bx bx-lock-alt icon"></i>
+                    </div> -->
+                    <div class="input-box">
+                        <!-- <input name="email" type="email"  class="input-field" placeholder="email" required autocomplete="off" /> -->
+                        <input name="newUser" type="text" class="input-field" placeholder="ten dang nhap" required autocomplete="off" />
+                        <i class="bx bx-lock-alt icon"></i>
+                    </div>
+                    <div class="input-box">
+                        <!-- <input name="email" type="email"  class="input-field" placeholder="email" required autocomplete="off" /> -->
+                        <input name="newPass" type="password" class="input-field" placeholder="pass" required autocomplete="off" />
+                        <i class="bx bx-lock-alt icon"></i>
+                    </div>
+                  
+                    <div class="input-box">
+                        <button type="submit"  class="input-submit">
+                            <span>Sign Up</span>
+                            <i class="bx bx-right-arrow-alt"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="social-login">
+                    <i class="bx bxl-google"></i>
+                    <i class="bx bxl-facebook"></i>
+                    <i class="bx bxl-twitter"></i>
+                    <i class="bx bxl-github"></i>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/handleAccount.js"></script>
+</body>
+</html>

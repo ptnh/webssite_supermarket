@@ -1,0 +1,166 @@
+/* Căn chỉnh và cải thiện giao diện tổng thể */
+.account-page {
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    display: flex;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.account-page__sidebar {
+    border: 1px solid #e0e0e0;
+    width: 250px;
+    padding: 15px;
+    background-color: #ffffff;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.account-page__greeting {
+    margin-bottom: 20px;
+}
+
+.account-page__title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.account-page__welcome {
+    font-size: 16px;
+    color: #666;
+}
+
+.account-page__menu {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+.account-page__menu-item {
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.account-page__menu-item:hover {
+    background-color: #e0e0e0;
+}
+
+.account-page__content {
+    border: 1px solid #e0e0e0;
+    width: calc(100% - 270px); /* Adjust based on sidebar width */
+    padding: 15px;
+    background-color: #ffffff;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.account-page__section-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 5px;
+}
+
+.account-page__info-item {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.account-page__info-detail {
+    padding: 4px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.account-page__orders-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.account-page__orders-table th, .account-page__orders-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.account-page__orders-table th {
+    background-color: #f0f0f0;
+}
+
+.account-page__password-form {
+    max-width: 400px;
+}
+
+.account-page__form-group {
+    margin-bottom: 15px;
+}
+
+.account-page__form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.account-page__form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.account-page__form-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.account-page__form-button:hover {
+    background-color: #0056b3;
+}
+
+/* show container products đã mua */
+.showContainerProducts{
+    width: 400px;
+    border: 1px solid green;
+}
+
+.product-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.img-products{
+    width: 50px;
+    height: 50px;
+}
+.product-details{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-info-account{
+    border: none;
+    background-color: var(--color-background-lv3);
+    padding: 10px 30px;
+    margin-left: 20px;
+    font-size: 20px;
+
+}
+.btn-info-account:hover{
+    background-color: var(--color-1);
+    color: white;
+}

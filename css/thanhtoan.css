@@ -1,0 +1,216 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Block: payment-info */
+.payment-info {
+    width: 1315px;
+    margin: auto;
+    display: flex;
+}
+
+/* Element: payment-info__left */
+.payment-info__left {
+    width: 70%;
+    background-color: white;
+    text-align: center;
+}
+
+/* Element: payment-info__logo */
+.payment-info__logo {
+    width: 300px;
+    height: 120px;
+    margin: 20px;
+}
+
+/* Element: payment-info__details */
+.payment-info__details {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+
+}
+.payment-info__title{
+    font-weight: bold;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+.payment-info__payment-method{
+   
+    /* margin:0px  100px; */
+}
+.payment-info__payment-method-form{
+    /* */
+}
+.payment-info__payment-method-option{
+    padding: 10px 5px;
+    border: 1px solid gainsboro;
+    margin: 5px 0px;
+    border-radius: 5px;
+}
+
+
+/* Element: payment-info__details-person */
+.payment-info__details-person {
+    width: 360px;
+    
+}
+
+/* Element: payment-info__payment-method */
+.payment-info__payment-method {
+    width: 300px;
+}
+
+/* CSS cho thẻ input chung */
+.form-group {
+    margin: 10px 0;
+}
+
+/* Modifier: payment-info__input--text */
+.payment-info__input--text {
+    width: 300px;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid rgb(217,217,217);
+    padding: 10px;
+}
+
+/* Modifier: payment-info__input--text:focus */
+.payment-info__input--text:focus {
+    border: 2px solid green;
+    outline: none;
+}
+
+/* Modifier: payment-info__checkbox */
+.payment-info__checkbox {
+    width: 20px;
+    height: 20px;
+}
+
+/* Block: payment-info__right */
+.payment-info__right {
+    width: 32%;
+    min-height: 650px;
+    background-color: rgb(250,250,250);
+    border: 1px solid gainsboro;
+}
+
+/* Element: payment-info__right-title */
+.payment-info__right-title {
+    margin: 10px;
+    padding-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 1px solid gainsboro;
+}
+
+/* Element: payment-info__right-details */
+.payment-info__right-details {
+    margin-left: 10px;
+}
+
+.payment-info__product-lists{
+    border-bottom: 1px solid gainsboro;
+    max-height: 250px; /* Chiều cao cố định */
+    overflow-y: auto; /* Thêm thanh cuộn dọc khi cần thiết */
+    overflow-x: hidden; /* Ẩn thanh cuộn ngang nếu không cần thiết */
+}
+/* Element: payment-info__product-list */
+.payment-info__product-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 10px 10px 0px;
+
+}
+
+/* Modifier: payment-info__product-list-item--img */
+.img_listProduct {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+/* Modifier: payment-info__product-list-item--name */
+.payment-info__product-list-item--name {
+    font-size: 20px;
+    margin-right: 70px;
+}
+
+/* Modifier: payment-info__product-list-item--quantity */
+.payment-info__product-list-item--quantity {
+    font-size: 20px;
+}
+
+/* Modifier: payment-info__product-list-item--price */
+.payment-info__product-list-item--price {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+/* Element: payment-info__discount-code */
+.payment-info__discount-code {
+    margin-top: 20px;
+    border-bottom: 1px solid gainsboro;
+}
+
+/* Modifier: payment-info__input--discount-code */
+.payment-info__input--discount-code {
+    margin-right: 10px;
+}
+
+/* Modifier: payment-info__button--apply */
+.payment-info__button--apply {
+    width: 80px;
+    height: 40px;
+    border: none;
+    background-color: cadetblue;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Element: payment-info__costs */
+.payment-info__costs {
+    margin-top: 20px;
+}
+
+/* Element: payment-info__cost */
+.payment-info__cost {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 10px 10px 0;
+}
+
+/* Modifier: payment-info__cost--transportation */
+.payment-info__cost--transportation {
+    border-bottom: 1px solid gainsboro;
+}
+
+/* Modifier: payment-info__cost-text, payment-info__cost-price */
+.payment-info__cost-text, 
+.payment-info__cost-price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Element: payment-info__actions */
+.payment-info__actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+/* Modifier: payment-info__button--order */
+.payment-info__button--order {
+    width: 120px;
+    height: 40px;
+    border: none;
+    background-color: cornflowerblue;
+}

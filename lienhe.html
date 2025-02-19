@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermarket</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+   
+    <script src="js/dungchung.js"></script>
+    <script src="data/product.js"></script>
+    <script src="js/classes.js"></script>
+    <script src="js/lienhe.js"></script>
+
+    <link rel="stylesheet" href="css/_header.css">
+    <link rel="stylesheet" href="css/_footer.css">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/dungchung.css">
+    <link rel="stylesheet" href="css/lienhe.css">
+    
+</head>
+<body>
+    <script>addHeader()</script>
+    <div class="contact">
+        <div class="contact-left">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3097.3036385899873!2d106.7193882142387!3d10.824395942027639!3m2!1i1024!2i768!4f13.1!5e1!3m2!1svi!2s!4v1739868702921!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="contact-right">
+            <div class="contact-right--info">
+                <div class="contact-right--info__logo">
+                    <img class="img-logo" src="public/icon/logo.png">
+                </div>
+                <div>
+                    <div class="contact-right--info__text">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>68 Đ. Số 20, Hiệp Bình Chánh, Thủ Đức, Hồ Chí Minh, Việt Nam</p>
+                    </div>
+                    <div class="contact-right--info__text">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>037903235</p>
+                    </div>
+                    <div class="contact-right--info__text">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p>hanhptn.12a1bb.1920@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-right--info__respond">
+                <section class="contact-form">
+                    <form id="contactForm" action="#" method="POST">
+                        <div style="display:flex; gap:10px">
+                           
+                            <input type="text" id="name" name="name" placeholder="Nhập họ và tên của bạn" required>
+                            
+                            <input type="email" id="email" name="email" placeholder="Nhập email của bạn" required>
+                        </div>
+                        <div style="display:flex; gap:10px">
+                           
+                            <input type="text" id="phone" name="phone" placeholder="Nhập số điện thoại của bạn" required>
+            
+                            <input type="text" id="address" name="address" placeholder="Nhập địa chỉ của bạn" required>
+            
+                        </div>
+                        <textarea id="message" name="message" rows="5" placeholder="Nhập tin nhắn của bạn" required></textarea>
+        
+                        <button type="submit">Gửi Liên Hệ</button>
+                    </form>
+                    <p id="responseMessage"></p>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script>addFooter()</script>
+</body>
+</html>

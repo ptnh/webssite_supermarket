@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermarket</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+   
+    <script src="js/trangchu.js"></script>
+    <script src="js/dungchung.js"></script>
+    <script src="data/product.js"></script>
+    <script src="js/classes.js"></script>
+    
+    <link rel="stylesheet" href="css/_header.css">
+    <link rel="stylesheet" href="css/_footer.css">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/dungchung.css">
+    <link rel="stylesheet" href="css/taikhoan.css">
+    <style>
+        #notification {
+            padding: 10px;
+            border-radius: 5px;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            opacity: 1;
+            transition: opacity 1s ease-out; /* Thay đổi thời gian hiệu ứng mờ dần */
+            z-index: 1000; /* Đảm bảo thông báo luôn ở trên cùng */
+            /* background-color: #fff; Đặt màu nền cho thông báo */
+        }
+        .icon-text {
+            display: flex;
+            align-items: center;
+            flex: 1;
+        }
+        .icon-text i {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        .icon-text span {
+            font-size: 16px;
+        }
+        .close-btn {
+            font-size: 20px;
+            color: #333;
+            cursor: pointer;
+            margin-left: 15px;
+            background: none;
+            border: none;
+            outline: none;
+            transition: color 0.3s;
+        }
+        .close-btn:hover {
+            color: #f00;
+        }
+    </style>
+</head>
+<body>
+    <script>addHeader();</script>
+    
+    <div class="slider_advertisement">
+        <img class="slider_advertisement--image" src="public/icon/slider_1.jpg">
+    </div>
+    <!-- danh mục nổi bật -->
+    <script>addListMenu();</script>
+    <!-- danh mục nổi bật -->
+   
+    <!-- list product -->
+    <div class="listProducts">
+        <div class="listProducts_navLink">
+            <p class="listProducts_navLink--title">
+                Danh sách sản phẩm
+            </p>
+            <img class="listProducts_navLink--img" src="public/icon/dayleos.png"/>
+            <div class="listProducts_navLink--link">
+                <div class="checkBox_showProduct">
+                    <span class="btn_showProduct active-menu-1" onclick="showProducts('all')">Tất cả</span>
+                </div>
+                <div class="checkBox_showProduct">
+                    <span class="btn_showProduct" onclick="showProducts('nuoc')">Nước uống</span>
+                </div>
+                <div class="checkBox_showProduct">
+                    <span class="btn_showProduct" onclick="showProducts('raucuqua')">Rau củ quả</span>
+                </div>
+                <div class="checkBox_showProduct">
+                    <span class="btn_showProduct" onclick="showProducts('thitca')">Thịt và cá</span>
+                </div>
+                <div class="checkBox_showProduct">
+                    <span class="btn_showProduct" onclick="showProducts('traicay')">Trái cây</span>
+                </div>
+            </div>
+        </div>
+        <div id="showListProduct1" class="listProducts_boxLink">
+        </div>
+        <div id="pagination">
+            
+        </div>
+        
+    </div>
+    <!-- list product -->
+
+    <!-- footer -->
+    <script>addFooter();</script>
+    <!-- footer -->
+
+    <!-- link liên lạc -->
+    <div id="linkContactZalo">
+
+    </div>
+    <div id="notification">
+            
+    </div>
+    <!-- link liên lạc -->
+
+    <script src="js/dungchungcuoi.js"></script>
+</body>
+</html>

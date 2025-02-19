@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chợ</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="css/canhan.css">
+    <link rel="stylesheet" href="css/_header.css">
+    <link rel="stylesheet" href="css/_footer.css">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/dungchung.css">
+
+    <script src="js/dungchung.js"></script>
+    <script src="data/product.js"></script>
+    <script src="js/classes.js"></script>
+    <script src="js/canhan.js"></script>
+  
+    
+</head>
+<body>
+    <script>addHeader();</script>
+    <div class="account-page">
+        <div class="account-page__sidebar">
+            <div class="account-page__greeting">
+                <p class="account-page__title">TRANG TÀI KHOẢN</p>
+                <p id="helloClient" class="account-page__welcome"></p>
+            </div>
+            <div class="account-page__menu">
+                <p class="account-page__menu-item" data-target="info">Thông tin tài khoản</p>
+                <p class="account-page__menu-item" data-target="orders">Đơn hàng của bạn</p>
+                <p class="account-page__menu-item" data-target="password">Đổi mật khẩu</p>
+            </div>
+        </div>
+        <div class="account-page__content">
+            <div class="account-page__info" id="info">
+                <p class="account-page__section-title">Thông tin tài khoản</p>
+                <div style="display:flex; justify-content:space-between; margin:0 30px">
+                    <p class="account-page__info-item">Họ tên:<input id="nameClient" class="account-page__info-detail" disabled></input></p>
+                    <p class="account-page__info-item">Số điện thoại:<input id="phoneClient" class="account-page__info-detail" disabled></input></p>
+                    <p class="account-page__info-item">Giới tính:<input id="sexClient" class="account-page__info-detail" disabled></input></p>
+                </div>
+                <div style="display:grid; grid-template-columns: auto auto auto; margin:0 30px">
+                    <p class="account-page__info-item">Số nhà:<input id="numberHomeClient" class="account-page__info-detail" disabled></input></p>
+                    <p class="account-page__info-item">Đường:<input id="streetClient" class="account-page__info-detail" disabled></input></p>
+                    <p class="account-page__info-item">Xã:<input id="villageClient" class="account-page__info-detail" disabled></input></p>
+                    <p class="account-page__info-item">Huyện:<input id="districtClient" class="account-page__info-detail" disabled></input></p>
+                    <p class="account-page__info-item">Tỉnh:<input id="provinceClient" class="account-page__info-detail" disabled></input></p>
+                </div>
+                <div id="button-update-info-account">
+                    
+                </div>
+                <div id="button-confirm-update-info-account">
+                    
+                </div>
+            </div>
+            <div class="account-page__orders" id="orders">
+                <p class="account-page__section-title">Đơn hàng của bạn</p>
+                <table class="account-page__orders-table">
+                    <thead>
+                        <tr>
+                            <th>Đơn hàng</th>
+                            <th>Ngày</th>
+                            <th>Giá trị đơn hàng</th>
+                            <th>PT thanh toán</th>
+                            <th>TT đơn</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="list-order">
+                       
+                    </tbody>
+                </table>
+            </div>
+            <div class="account-page__password-change" id="password">
+                <p class="account-page__section-title">Đổi mật khẩu</p>
+                <form class="account-page__password-form" onsubmit="datLaiMK(event)">
+                    <div class="account-page__form-group">
+                        <label for="current-password" class="account-page__form-label">Mật khẩu hiện tại:</label>
+                        <input type="password" id="current-password" class="account-page__form-input" required>
+                    </div>
+                    <div class="account-page__form-group">
+                        <label for="new-password" class="account-page__form-label">Mật khẩu mới:</label>
+                        <input type="password" id="new-password" class="account-page__form-input" required>
+                    </div>
+                    <div class="account-page__form-group">
+                        <label for="confirm-password" class="account-page__form-label">Xác nhận mật khẩu mới:</label>
+                        <input type="password" id="confirm-password" class="account-page__form-input" required>
+                    </div>
+                    <button type="submit" class="account-page__form-button">Cập nhật mật khẩu</button>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+    <script>addFooter();</script>
+
+</body>
+</html>

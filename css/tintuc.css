@@ -1,0 +1,104 @@
+.container_newspaper{
+    /* width: 1360px; */
+    margin: 10px auto;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 73% 25%;
+}
+
+.newspaper_news{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.newspaper_news--new{
+    display: flex;
+    flex-direction: column;  /* Để sắp xếp các phần tử theo chiều dọc */
+    align-items: center; /* Căn giữa theo chiều ngang */
+    justify-content: center; /* Căn giữa theo chiều dọc */
+    width: 100%; /* Đảm bảo container có chiều rộng đầy đủ */
+   
+    width: 300px;
+    height: 390px;
+    margin: 10px 10px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+.newspaper_news--new--image{
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    object-fit: contain;
+}
+.newspaper_news--new--link{
+    width: 302px;
+    height: 127px;
+    padding: 20px 20px;
+    background-color: rgba(0, 252, 0, 0.5);
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transition: all 1s;
+}
+.news--new--link--content{
+    display: none;
+}
+.newspaper_news--new--link:hover .news--new--link--content{
+    display: block;
+}
+.newspaper_news--new--link:hover{
+    height: 180px;
+}
+.news--new--link--title{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.read-continute{
+    display: inline-block;
+    padding: 5px 20px;
+    margin-top: 10px;
+    font-size: 18px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    text-decoration: none;
+}
+
+.read-continute:hover{
+    background-color: rgb(8, 99, 15);
+    border: none;
+}
+/* -------------------- list quảng cáo -------------------- */
+.newspaper_box{
+    display: flex;
+    color: black;
+    text-decoration: none;
+}
+.newspaper_box--image{
+    width: 60px;
+    height: 80px;
+    margin: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.newspaper_box--title{
+    font-weight: bold;
+    margin-top: 10px;
+}
+/* -------------------- list quảng cáo -------------------- */
+.newsContainer{
+    width: 320px;
+    background-color: rgb(239,255,207);
+    border-radius: 5px;
+    padding: 1px;
+    margin-top: 10px;
+    max-height: 450px;
+}
+/* -------------------- list quảng cáo -------------------- */

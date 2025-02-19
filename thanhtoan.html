@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/thanhtoan.css">
+
+    <script src="js/dungchung.js"></script>
+    <script src="data/product.js"></script>
+    <script src="js/classes.js"></script>
+    <script src="js/thanhtoan.js"></script>
+    <!-- <link rel="stylesheet" href="js/thanhtoan.js"> -->
+    
+</head>
+<body>
+    <div class="payment-info">
+        <div class="payment-info__left">
+            <img class="payment-info__logo" src="public/icon/logo.png" alt="Logo">
+            <div class="payment-info__details">
+                <div class="payment-info__details-person">
+                    <p class="payment-info__title">Thông tin nhận hàng</p>
+                    <form id="infoForm" method="post" class="payment-info__form">
+                        <div class="form-group">
+                            <input class="payment-info__input payment-info__input--text payment-info__input--fullname" type="text" id="fullname" name="fullname" placeholder="Họ và tên:" required>
+                        </div>  
+                        <div class="form-group">
+                            <input class="payment-info__input payment-info__input--text payment-info__input--email" type="email" id="phone" name="phone" placeholder="Số điện thoại" required>
+                        </div>
+                       
+                        <div class="form-group">
+                            <input class="payment-info__input payment-info__input--text payment-info__input--address" type="text" id="address" name="address" placeholder="Địa chỉ" required>
+                        </div>  
+                        <div class="form-group">
+                            <input class="payment-info__input payment-info__input--text payment-info__input--note" id="note" name="note" placeholder="Ghi chú:">
+                        </div>
+                    </form>
+                </div>
+                <div class="payment-info__payment-method">
+                    <p class="payment-info__title">Hình thức thanh toán</p>
+                    <form class="payment-info__payment-method-form" method="">
+                        <div class="payment-info__payment-method-option">
+                            <input class="payment-info__checkbox" type="checkbox" id="transfer" name="paymentMethod" value="transfer" checked>
+                            <label class="payment-info__label" for="transfer">Thanh toán chuyển khoản</label>
+                        </div>
+                        <div class="payment-info__payment-method-option">
+                            <input class="payment-info__checkbox" type="checkbox" id="cod" name="paymentMethod" value="cod">
+                            <label class="payment-info__label" for="cod">Thanh toán khi giao hàng (COD)</label>
+                        </div>
+                        <div class="payment-info__payment-method-option">
+                            <input class="payment-info__checkbox" type="checkbox" id="shop" name="paymentMethod" value="shop">
+                            <label class="payment-info__label" for="shop">Nhận tại cửa hàng</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="payment-info__right">
+            <p class="payment-info__right-title" id="countOrder"></p>
+            <div class="payment-info__right-details">
+                <div id="listProductBill" class="payment-info__product-lists"></div>
+                
+                <div class="payment-info__discount-code">
+                    <input class="payment-info__input payment-info__input--text payment-info__input--discount-code" type="text" id="discountCode" name="discountCode" placeholder="Mã giảm giá:">
+                    <button class="payment-info__button payment-info__button--apply" onclick="apdung()">Áp dụng</button>
+                </div>
+                <div class="payment-info__costs">
+                    <div class="payment-info__cost payment-info__cost--provisional">
+                        <p class="payment-info__cost-text">Tạm tính:</p>
+                        <p id="provisionalCosts" class="payment-info__cost-price"></p>
+                    </div>
+                    <div class="payment-info__cost payment-info__cost--transportation">
+                        <p class="payment-info__cost-text">Vận chuyển:</p>
+                        <p class="payment-info__cost-price">20.000đ</p>
+                    </div>
+                    <div class="payment-info__cost payment-info__cost--total">
+                        <p class="payment-info__cost-text">Tổng cộng:</p>
+                        <p id="sumMoneyOrder" class="payment-info__cost-price"></p>
+                    </div>
+                    <div class="payment-info__actions">
+                        <a href="/website-business/trangchu.html" class="payment-info__link payment-info__link--continue">Tiếp tục mua hàng</a>
+                        <button class="payment-info__button payment-info__button--order" onclick="datHang()">Đặt hàng</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+        checkboxes.forEach((checkbox) => {
+            checkbox.addEventListener('change', function() {
+                checkboxes.forEach((cb) => {
+                    if (cb !== this) {
+                        cb.checked = false;
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

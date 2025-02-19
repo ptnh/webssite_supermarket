@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.image-present-product{
+    width: 400px;
+}
+.image-detail-product-big{
+    width: 400px;
+    height: 400px;
+    border: 1px solid yellow;
+    background-size: cover; /* Hiển thị ảnh mà không bị méo */
+    background-repeat: no-repeat;
+}
+/* css chương trình quảng cáo con */
+.program-quangcao{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: rgb(20, 27, 25);
+}
+.icon-tamp{
+    color: yellow;
+    font-size: 18px;
+    margin: 5px 5px;
+}
+.text-lv-5{
+    font-size: 18px;
+    color: green;
+}
+/* ----- */
+/* css phần ảnh thay thês */
+.image-replace-child{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.image-child{
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+    border-radius: 4px;
+    border: 1px solid pink;
+}
+.image-child-focus{
+    border: 2px solid rgb(139, 10, 32);
+}
+.image-child-focus:hover{
+    border: 2px solid rgb(83, 56, 61) !important; 
+}
+.image-child:hover {
+    border: 2px solid rgb(139, 10, 32);
+}
+/* hết css ảnh đại dhieenj sap */
+
+/* css cho chính sách ---------------------*/
+.policy-store{
+    width: 320px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid red;
+    background-color: rgb(145, 245, 141);
+}
+.title-policy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-lv-3{
+    font-size: 28px;
+    color: green;
+}
+.icon-title{
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+}
+.content-policy{
+    display: flex;
+    align-items: center;
+    margin: 5px 0px;
+}
+.image-minh-hoa{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.text-lv-4{
+    font-size: 22px;
+    color: green;
+}
+.text-content{
+    font-size: 18px;
+    color: black;
+}
+/* thông báo khuyến mãi */
+.note-khuyenmai{
+    width: 600px;
+}
+.sologan-khuyenmai{
+    width: 250px;
+    background-color: aquamarine;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    /* padding: 5px 0px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content-khuyenmai{
+    width: 600px;
+
+    border: 1px solid aquamarine;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.content-detail-khuyenmai{
+    display: flex;
+    align-items: center;
+}
+/* css mô tả sp và hướng dẫn mua hàng */
+.doanvan-mota{
+    width: 600px;
+    border: 1px solid red;
+}
+.list-button{
+    display: flex;
+    margin: 10px 0px;
+}
+.btn-type-1{
+    background-color: white;
+    color: green;
+    border: 1px solid green;
+    border-radius: 3px;
+    margin: 5px;
+    padding: 5px 10px;
+}
+.chitietdoanvan{
+    max-width: 600px;
+    margin-left: 5px;
+    border-radius: 5px;
+    padding: 5px 5px 15px 5px;
+    border: 1px solid green;
+}
+
+/* --------------------------------- */
+/* css mã khuyến mãi */
+.program-khuyenmai{
+    width: 320px;
+    background-color: aqua;
+    border-radius: 5px;
+    padding: 1px;
+}
+.phieu-khuyenmai{
+    border: 2px solid green;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 3px;
+}
+.top-phieu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+.hansudung{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn-type-2{
+    background-color: brown;
+    color: white;
+    border-radius: 4px;
+    padding: 6px 8px;
+}
+/* css đề xuất mua hàng */
+.dexuat-muahang{
+    width: 500px;
+    border: 2px solid green;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+.image-dexuat{
+    width: 50px;
+    height: 50px;
+
+}

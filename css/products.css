@@ -1,0 +1,128 @@
+/* css cho phân trang */
+.orderByPage{
+    display: none;
+}
+.container_listproduct{
+    /* border: 1px solid red; */
+    display: flex;
+    margin-top: 10px;
+}
+.leftOption{
+    width: 350px;
+    /* border: 1px solid red; */
+}
+.leftOption_danhmuc{
+    width: 300px;
+    /* height: 300px; */
+    margin: 10px auto;
+    background-color: rgb(239,255,207);
+    border-radius: 5px;
+    padding-bottom: 10px;
+}
+.leftoption_danhmuc--title{
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(103,146,16);
+}
+.cata--title--text{
+    margin: 10px 20px;
+}
+
+.optionChild{
+    height: 30px;
+    /* border: 1px solid red; */
+    font-size: 20px;
+    margin: 10px 30px;
+    cursor: pointer;
+}
+.optionChild:hover{
+    color: rgb(103,146,16);
+}
+ /* css cho input chọn giá */
+ .price-filter {
+    /* Style cho block chính */
+    width: 300px;
+    height: 250px;
+    background-color: rgb(239,255,207);
+    border-radius: 10px;
+    margin: 10px auto;
+}
+
+.price-filter__header {
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    padding: 8px 20px;
+}
+
+.price-filter__title {
+    font-size: 1.5em;
+    margin: 0px 5px 0px;
+}
+.price-filter__icon {
+    font-size: 1.2em;
+}
+
+.price-filter__form {
+    margin: 10px 20px;
+}
+
+.price-filter__checkbox {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.price-filter__input {
+    margin-right: 5px;
+    
+}
+
+/* css bên phải */
+.rightOption{
+
+}
+/* Block */
+.filter {
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    /* border: 1px solid red; */
+}
+
+/* Element */
+.filter__label {
+    /* Không cần style đặc biệt ở đây */
+}
+
+.filter__button {
+    border: 1px solid green;
+    padding: 4px;
+    margin: 0 10px;
+    border-radius: 5px;
+    color: green;
+}
+
+.filter__button:hover {
+    color: white;
+    background-color: rgb(1, 165, 1);
+}
+
+/* Modifier */
+.filter__button--active {
+    color: white;
+    background-color: rgb(1, 165, 1);
+}
+
+/* css list product */
+.listProductFilter{
+    width: 1000px;
+    margin-left: 10px;
+    display: flex;
+    flex-wrap: wrap; /* Cho phép xuống dòng */
+    align-items: center;
+    justify-content: space-between;
+}
